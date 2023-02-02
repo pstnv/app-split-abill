@@ -1,0 +1,156 @@
+html {
+    -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+    background-image: url("https://cdn.glitch.global/327df165-fa91-47a9-a9c3-cb35d65693e2/background.jpg?v=1648633252614");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:rgb(151, 199, 194);
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    min-height: 650px;
+    word-wrap: break-word;
+    }
+* {
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: orange;
+}
+#container {
+    margin: 40px auto;
+    background-color:rgb(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: calc(100% - 20px);
+    height: 700px;
+    min-height: fit-content;
+    border-radius: 40px;
+    color: white;
+    }
+
+    h1 {
+        font-size: 30px;
+        align-self: center;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: tomato;
+    }
+
+    form {
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+    }
+p {
+    font-size: 18px;
+    color: purple;
+    -webkit-text-stroke: 0.5px #000000;
+}
+    input {
+        padding: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        border: 2px solid yellowgreen;
+    }
+    #addTip {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: #F7DBF0;
+        font-family: 'Montserrat', sans-serif;    
+        cursor: pointer;  
+        color: purple;  
+    }
+    #tip {
+        display: none;
+        height: 20px;
+    }
+
+    #btn {
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color:tomato;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;  
+        color: purple;  
+    }
+    #showTotalAmountPay {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #billSplit,
+    #totalTip,
+    #totalAmount {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        background-color: yellowgreen;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        word-break: break-all;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #dividedBill,
+    #dividedTip,
+    #billAndTip {
+        min-height: 20px;
+    }
+
+    @media all and (max-width: 500px) {
+        body {
+            height: fit-content;
+            min-height: 100%;
+        }
+        
+    #container {
+        margin: 20px auto;
+        height: fit-content;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    
+        form {
+            margin: 10px 20px;
+        }
+        form p {
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        
+    input {
+        width: 100%;
+    }
+    #showTotalAmountPay {
+        flex-direction: column;
+        width: 220px;
+        max-width: 80%;
+        align-self: center;
+    }
+    #showTotalAmountPay p {
+        margin: 0;
+    }
+    #billSplit,
+    #totalTip,
+    #totalAmount {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
